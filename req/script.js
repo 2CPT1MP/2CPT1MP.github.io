@@ -9,7 +9,7 @@ inp1.onclick = function () {
 	var passcode = prompt("Enter your request code");
 	
 	if (passcode == "5F85100") {
-	    alert("Library Card Number: \nPIN: ")
+	    alert("Organization URL: greenelibrary.info\nLibrary Card Number: 1359730 \nPIN: 8650 ")
 	}
 	
 	
