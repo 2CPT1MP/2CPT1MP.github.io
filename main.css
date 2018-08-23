@@ -4,7 +4,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-#download {
+.download {
     color: red;
     font-size: 150%;
     text-decoration-line: none;
