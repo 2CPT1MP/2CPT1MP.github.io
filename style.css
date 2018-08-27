@@ -1,0 +1,126 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    min-width: 650px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+header, nav, footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #0083e8;
+    color: white;
+    padding-bottom: 0.1px;
+}
+
+footer {
+    border-radius: 10px;
+}
+
+header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.1px;
+}
+
+header h1 {
+    padding: 40px;
+    padding-bottom: 0px;
+    font-size: 450%;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+nav li {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 150%;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #0083e8;
+}
+
+nav a:active {
+    background-color: white;
+    color: red;
+}
+
+article {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px dotted gray;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+article h2 {
+    border-bottom: 2px solid #0083e8;
+    border-radius: 1px;
+}
+
+.important {
+    background-color: pink;
+    border-left: 5px solid red;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1px;
+    text-indent: 0px;
+    text-align: left;
+}
+
+div.download {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div.download a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0083e8;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div.download a:hover {
+    background-color: white;
+    border: 2px solid #0083e8;
+    color: #0083e8;
+}
+
+div.download a:active {
+    background-color: red;
+    border: none;
+    color: white; 
+}
+
+footer p {
+    text-align: center;
+}
