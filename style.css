@@ -7,79 +7,93 @@ body {
 }
 
 p {
-    text-indent: 20px;
     text-align: justify;
 }
 
-header, nav, footer {
-    padding: 10px;
+header h1, nav, footer {
     text-align: center;
     background-color: #0083e8;
     color: white;
-    padding-bottom: 0.1px;
-}
-
-footer {
     border-radius: 10px;
-}
-
-header {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 nav {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     padding: 0.1px;
-}
-
-header h1 {
-    padding: 40px;
-    padding-bottom: 0px;
-    font-size: 450%;
-    margin-bottom: 0;
-    letter-spacing: 2px;
-}
-
-nav li {
-    display: inline-block;
-    width: 150px;
-    padding: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 150%;
-    border-radius: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-nav a:hover {
     background-color: white;
     color: #0083e8;
 }
 
+nav li {
+    color: #0083e8;
+}
+
+header h1 {
+    padding: 50px 20px;
+    font-size: 700%;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+ul a {
+    margin: auto;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 150%;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0083e8;
+    border-radius: 10px;
+    margin: 0px;
+    line-height: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+nav a:hover {
+    background-color: #0083e8;
+    border-color: #0083e8;
+    color: white;
+}
+
 nav a:active {
-    background-color: white;
-    color: red;
+    background-color: red;
+    border-color: red;
 }
 
 article {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 1px dotted gray;
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: 0.5px solid #bdbdbd;
+    padding: 40px;
     border-radius: 10px;
 }
 
 article h2 {
-    border-bottom: 2px solid #0083e8;
+    font-weight: 700;
     border-radius: 1px;
+    color: white;
+    border: 5px solid #0083e8;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #0083e8;
+   
+    margin-top: 0px;
 }
 
 .important {
@@ -96,6 +110,7 @@ article h2 {
 div.download {
     text-align: center;
     margin-top: 25px;
+    margin-top: 30px;
 }
 
 div.download a {
@@ -107,6 +122,7 @@ div.download a {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    
 }
 
 div.download a:hover {
@@ -117,10 +133,11 @@ div.download a:hover {
 
 div.download a:active {
     background-color: red;
-    border: none;
-    color: white; 
+    color: white;
+    border-color: red; 
 }
 
 footer p {
     text-align: center;
+    padding: 20px;
 }
