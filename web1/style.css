@@ -10,7 +10,7 @@ a {
 
 body {
 	font-family: gabriola regular;
-	font-size: 0.65cm;
+	font-size: 200%;
 	color: #230c33;
 	background-color: #caa8f5;
 }
@@ -18,14 +18,14 @@ body {
 
 .main-header {
 	color: white;
-	padding-top: 0.70cm;
+	padding-top: 1%;
 }
 
 .main-footer > p {
 	text-align: center;
 	color: white;
 	text-indent: 0;
-	padding: 0.1cm;
+	padding: 1%;
 }
 
 .dark-background {
@@ -34,7 +34,7 @@ body {
 
 .site-title {
 	font-weight: 900;
-	font-size: 7vw;
+	font-size: 350%;
 }
 
 h1, h2 {
@@ -43,28 +43,27 @@ h1, h2 {
 }
 
 h2 {
-	margin-top: 1.5cm;
-	font-size: 1.0cm;
+	font-size: 150%;
 	color: black;
 }
 
 h3 {
 	text-indent: 1.5;
-	margin-top: 1.2cm;
+	margin-top: 4%;
 
 }
 
 .first-heading {
-	margin: 0.5cm;
+	margin: 4%;
 }
 
 p, .regular-list {
 	text-align: justify;
-	text-indent: 1.5cm;
+	text-indent: 7%;
 	font-weight: 550;
 	color: black;
-	font-size: 0.70cm;
-	margin: 0cm 0.75cm 0cm 1.4cm;
+	font-size: 100%;
+	margin: 0cm 2% 0cm 4%;
 }
 
 .regular-list ul {
@@ -82,7 +81,13 @@ nav ul {
 	
 }
 
-@media only screen and (max-width: 900px)
+@media only screen and (min-resolution: 100dpi){
+body {
+	font-size: 310%
+}
+}
+
+@media only screen and (max-width: 1050px), (orientation: portrait)
 {
 nav ul {
 	flex-direction: column;
@@ -113,7 +118,7 @@ nav {
 	padding: 0.75cm;
 	display: block;
 	width: 90%;
-	margin: 0.2cm auto;
+	margin: 1% auto;
 }
 
 
@@ -171,9 +176,24 @@ footer {
 
 }
 
+@media only screen and (min-resolution: 100dpi){
+
+.flex-container {
+	max-width: 20cm;
+
+}
+}
+
 .flex-item {
-	margin: 0.25cm;
+	margin: 1.0%;
 	box-shadow: 0 0 0.2cm 0.05cm #230c33;
+}
+
+@media only screen and (min-resolution: 100dpi){
+.flex-item {
+	margin: 3.0%;
+	box-shadow: 0 0 0.2cm 0.05cm #230c33;
+}
 }
 
 .flex-item:hover {
@@ -182,10 +202,11 @@ footer {
 
 input[type=text], input[type=email], select, option, 
 input[type=submit], input[type=reset], textarea, input[type=number] {
-	padding: 0.2cm;
+	padding: 1.5%;
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
+	font-size: 100%;
 }
 
 textarea {
@@ -195,8 +216,13 @@ textarea {
 }
 
 fieldset {
-	padding: 0.5cm;
-	margin-bottom: 1.0cm;
+	padding: 1cm;
+	margin-bottom: 1%;
 	border: solid #230c33 0.01cm;
+}
+
+@media only screen and (min-resolution: 100dpi){
+img {
+	width: 100%;
 }
 
