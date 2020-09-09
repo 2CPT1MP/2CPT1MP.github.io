@@ -1,0 +1,202 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	font-family: gabriola regular;
+	font-size: 0.65cm;
+	color: #230c33;
+	background-color: #caa8f5;
+}
+
+
+.main-header {
+	color: white;
+	padding-top: 0.70cm;
+}
+
+.main-footer > p {
+	text-align: center;
+	color: white;
+	text-indent: 0;
+	padding: 0.1cm;
+}
+
+.dark-background {
+	background-color: #230c33;
+}
+
+.site-title {
+	font-weight: 900;
+	font-size: 7vw;
+}
+
+h1, h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-top: 1.5cm;
+	font-size: 1.0cm;
+	color: black;
+}
+
+h3 {
+	text-indent: 1.5;
+	margin-top: 1.2cm;
+
+}
+
+.first-heading {
+	margin: 0.5cm;
+}
+
+p, .regular-list {
+	text-align: justify;
+	text-indent: 1.5cm;
+	font-weight: 550;
+	color: black;
+	font-size: 0.70cm;
+	margin: 0cm 0.75cm 0cm 1.4cm;
+}
+
+.regular-list ul {
+	list-style: none;
+}
+
+.roman-list {
+	list-style-type: upper-roman;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	
+}
+
+@media only screen and (max-width: 900px)
+{
+nav ul {
+	flex-direction: column;
+	text-align: center;
+}
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	
+}
+
+nav li {
+	padding: 0.2cm 0.5cm 0.1cm 0.5cm;
+	margin: 0.2cm;
+	display: block;
+}
+
+
+nav {
+	background-color: #592e83;
+	box-shadow: 0 0 0.1cm 0.1cm #592e83;
+}
+
+
+.card {
+	padding: 0.75cm;
+	display: block;
+	width: 90%;
+	margin: 0.2cm auto;
+}
+
+
+.profile-pic {
+	display: flex;
+	border-radius: 50%;
+	margin: auto;
+	box-shadow: 0 0 0.2cm 0.02cm white;
+}
+
+.th {
+	font-weight: bold;
+}
+
+td {
+	padding: 0px 1cm;
+	vertical-align: top;
+}
+
+table {
+	margin: 0 auto;
+}
+
+footer {
+	box-shadow: 0 0 0.1cm 0.1cm #230c33;
+}
+
+.active {
+	box-shadow: 0 0 0.1cm 0.1cm #230c33;
+	border-radius: 0.2cm;
+	background-color: #230c33;
+
+}
+
+.border-table, .border-table td  {
+	border: solid #230c33 1px;
+	border-collapse: collapse;
+}
+
+.image-title {
+	text-indent: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 30cm;
+	margin: auto;
+	vertical-align: top;
+
+}
+
+.flex-item {
+	margin: 0.25cm;
+	box-shadow: 0 0 0.2cm 0.05cm #230c33;
+}
+
+.flex-item:hover {
+	box-shadow: 0 0 0.2cm 0.08cm #230c33;
+}
+
+input[type=text], input[type=email], select, option, 
+input[type=submit], input[type=reset], textarea, input[type=number] {
+	padding: 0.2cm;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+	margin: 0;
+	text-indent: 0px;
+}
+
+fieldset {
+	padding: 0.5cm;
+	margin-bottom: 1.0cm;
+	border: solid #230c33 0.01cm;
+}
+

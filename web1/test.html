@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Тестирование</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<!--meta http-equiv="Refresh" content=1; url=index.html"-->
+	</head>
+	<body>
+		<header class="main-header dark-background">
+			<h1 class="site-title">ЛИЧНЫЙ САЙТ</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html"> ГЛАВНАЯ </a></li>
+				<li><a href="about.html"> ОБО МНЕ </a></li>
+				<li><a href="interests.html"> ИНТЕРЕСЫ </a></li>
+				<li><a href="studies.html"> УЧЁБА </a></li>
+				<li><a href="photos.html"> АЛЬБОМ </a></li>
+				<li><a href="contact.html"> КОНТАКТ </a></li>
+				<li class="active"><a href="test.html"> ТЕСТ </a></li>
+				<div style=clear:both></div>
+			</ul>
+		</nav>
+		<main>
+			<article class="card">
+				<header>
+					<h2 class="first-heading">Тестирование</h2>
+				</header>
+				<div class="flex-container">
+					<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
+
+					<fieldset><legend>Общая информация</legend>
+						Наименование дисциплины: <input type="text" name="sender-name" readonly value="Информатика"><br/>
+						Ваше ФИО: <input type="text" name="sender-name"><br/>
+						Группа: <input type="text" name="sender-name"><br/>
+						Пол: <input type="radio" name="sender-gender" value="male">мужской
+						<input type="radio" name="sender-gender" value="female">женский<br>
+						Возраст:
+						<input type=number name="sender-age" min=17 max=80 value="18"><br>
+						</fieldset>
+					</fieldset>
+					<fieldset><legend>Вопросы</legend>
+						Microsoft Word это <select name="word-is"><br>
+							<option>-</option>
+							<option value="processor">Текстовый процессор</option>
+							<option value="editor">Текстовый редактор</option>
+						</select>
+						USB расшифровывается как <select name="usb-is"><br>
+							<option>-</option>
+							<option>Universal Series Bit</option>
+							<option>Universal Serial Bus</option>
+						</select>
+						Что такое форматирование в Word<select name="formatting-is"><br>
+							<option value="none">-</option>
+							<option value="clear">Очистка</option>
+							<option value="apperance">Оформление</option>
+						</select>
+						<input type="reset">
+						<input type="submit">
+						</form>
+					</form>
+			</div>
+			</article>
+		</main>
+		<footer class="main-footer dark-background">
+			<p> Copyright &copy;2020 </p>
+		</footer>
+	</body>
+</html>
