@@ -20,15 +20,15 @@ a {
 
 body {
 	font-family: Gabriola;
-	font-size: 200%;
+	font-size: 150%;
 	color: #230c33;
 	background-color: #caa8f5;
 }
 
 .main-header {
-	color: white;
-	padding-top: 1%;
-}
+		color: white;
+		padding-top: 1%;
+	}
 
 .main-footer > p {
 	text-align: center;
@@ -90,19 +90,7 @@ nav ul {
 	
 }
 
-@media only screen and (min-resolution: 100dpi){
-body {
-	font-size: 310%
-}
-}
 
-@media only screen and (max-width: 1050px), (orientation: portrait)
-{
-nav ul {
-	flex-direction: column;
-	text-align: center;
-}
-}
 nav a {
 	text-decoration: none;
 	color: white;
@@ -185,24 +173,9 @@ footer {
 
 }
 
-@media only screen and (min-resolution: 100dpi){
-
-.flex-container {
-	max-width: 20cm;
-
-}
-}
-
 .flex-item {
 	margin: 1.0%;
 	box-shadow: 0 0 0.2cm 0.05cm #230c33;
-}
-
-@media only screen and (min-resolution: 100dpi){
-.flex-item {
-	margin: 3.0%;
-	box-shadow: 0 0 0.2cm 0.05cm #230c33;
-}
 }
 
 .flex-item:hover {
@@ -211,11 +184,11 @@ footer {
 
 input[type=text], input[type=email], select, option, 
 input[type=submit], input[type=reset], textarea, input[type=number] {
-	padding: 1.5%;
+	padding: 1.25%;
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
-	font-size: 100%;
+	font-size: 80%;
 }
 
 textarea {
@@ -225,13 +198,60 @@ textarea {
 }
 
 fieldset {
-	padding: 1cm;
+	padding: 5%;
 	margin-bottom: 1%;
 	border: solid #230c33 0.01cm;
 }
 
+
+
+
 @media only screen and (min-resolution: 100dpi){
-img {
-	width: 100%;
+	img {
+		width: 100%;
+	}
+	
+	input[type=text], input[type=email], select, option, 
+	input[type=submit], input[type=reset], textarea, input[type=number] {
+		padding: 1.5%;
+		box-sizing: border-box;
+		font-size: 100%;
+	}
+
+	.flex-item {
+		margin: 3.0%;
+		box-shadow: 0 0 0.2cm 0.05cm #230c33;
+	}
+
+	.flex-container {
+		max-width: 20cm;
+	}
+
+	body {
+		font-size: 350%
+	}
+
+	.main-header {
+		color: white;
+		font-size: 4vw;
+		padding: 3% 5% 0% 5%;
+}
+
+}
+
+@media only screen and (max-width: 1050px), (orientation: portrait)
+{
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.main-header {
+		color: white;
+		font-size: 4vw;
+		padding: 3% 5% 0% 5%;
+}
+
+	
 }
 
