@@ -19,7 +19,7 @@ a {
 }
 
 body {
-	font-family: Gabriola;
+	font-family: Gabriola, serif;
 	font-size: 150%;
 	color: #230c33;
 	background-color: #caa8f5;
@@ -28,7 +28,7 @@ body {
 .main-header {
 		color: white;
 		padding-top: 1%;
-	}
+}
 
 .main-footer > p {
 	text-align: center;
@@ -90,7 +90,6 @@ nav ul {
 	
 }
 
-
 nav a {
 	text-decoration: none;
 	color: white;
@@ -104,14 +103,9 @@ nav li {
 	display: block;
 }
 
-
-
-
 nav {
 	background-color: #592e83;
-	box-shadow: 0 0 0.1cm 0.1cm #592e83;
 }
-
 
 .card {
 	padding: 0.75cm;
@@ -139,10 +133,6 @@ td {
 
 table {
 	margin: 0 auto;
-}
-
-footer {
-	box-shadow: 0 0 0.1cm 0.1cm #230c33;
 }
 
 .active {
@@ -206,45 +196,6 @@ fieldset {
 }
 
 
-
-
-@media only screen and (min-resolution: 100dpi){
-	img {
-		width: 100%;
-	}
-	
-	input[type=text], input[type=email], select, option, 
-	input[type=submit], input[type=reset], textarea, input[type=number] {
-		padding: 1.5%;
-		box-sizing: border-box;
-		font-size: 100%;
-	}
-
-	.flex-item {
-		margin: 3.0%;
-		box-shadow: 0 0 0.2cm 0.05cm #230c33;
-	}
-
-	.flex-container {
-		max-width: 20cm;
-	}
-
-	body {
-		font-size: 350%
-	}
-
-	.main-header {
-		color: white;
-		font-size: 4vw;
-		padding: 3% 5% 0% 5%;
-	}
-	nav li {
-		padding: 1.5% 1% 1% 1%;
-		margin: 1%;
-		display: block;
-	}
-}
-
 @media only screen and (max-width: 800px), (orientation: portrait)
 {
 	nav ul {
@@ -262,5 +213,23 @@ fieldset {
 		margin: 1%;
 		display: block;
 	}
-}	
+}
 
+@media (hover: none) {
+	body {
+		font-size: 350%;
+	}
+	img {
+		width: 100%;
+		height: 
+	}
+	.profile-pic {
+		width: 75%;
+	}
+}
+
+@media only screen and (hover: none) and (orientation: landscape) {
+	body {
+		font-size: 200%;
+	}
+}	
