@@ -22,12 +22,15 @@ body {
 	font-family: Gabriola, serif;
 	font-size: 150%;
 	color: #230c33;
-	background-color: #caa8f5;
 }
 
 .main-header {
-		color: white;
-		padding-top: 1%;
+	color: white;
+	padding-top: 1%;
+}
+
+.main-footer{
+	box-shadow: 0vh 0vh 0.2vh 0.2vh #592e83;
 }
 
 .main-footer > p {
@@ -59,11 +62,6 @@ h2 {
 h3 {
 	text-indent: 1.5;
 	margin-top: 4%;
-
-}
-
-.first-heading {
-	margin: 4%;
 }
 
 p, .regular-list {
@@ -83,28 +81,20 @@ p, .regular-list {
 	list-style-type: upper-roman;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	
-}
-
 nav a {
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	
-}
-
-nav li {
 	padding: 0.1cm 0.25cm 0.05cm 0.25cm;
 	margin: 0.2cm;
-	display: block;
+	color: white;
 }
 
 nav {
 	background-color: #592e83;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	text-align: center;
+	flex-direction: row;
+	box-shadow: 0vh 0vh 0.2vh 0.2vh #592e83;
 }
 
 .card {
@@ -127,22 +117,22 @@ nav {
 }
 
 td {
-	padding: 0px 1cm;
-	vertical-align: top;
+	padding: 1vh 1vw;
+	vertical-align: center;
 }
 
 table {
 	margin: 0 auto;
 }
 
-.active {
-	box-shadow: 0 0 0.1cm 0.1cm #230c33;
-	border-radius: 0.2cm;
-	background-color: #230c33;
 
+.active {
+	border-radius: 15px;
+	background-color: #230c33;
+	box-shadow: 0vh 0vh 0.2vh 0.2vh#230c33;
 }
 
-.border-table, .border-table td  {
+.border-table, .border-table td, .border-table th  {
 	border: solid #230c33 1px;
 	border-collapse: collapse;
 }
@@ -162,7 +152,6 @@ table {
 	max-width: 30cm;
 	margin: auto;
 	vertical-align: top;
-
 }
 
 .flex-item {
@@ -196,24 +185,7 @@ fieldset {
 }
 
 
-@media only screen and (max-width: 800px), (orientation: portrait)
-{
-	nav ul {
-		flex-direction: column;
-		text-align: center;
-	}
 
-	.main-header {
-		color: white;
-		font-size: 4vw;
-		padding: 3% 5% 0% 5%;
-	}
-	nav li {
-		padding: 1.5% 1% 1% 1%;
-		margin: 1%;
-		display: block;
-	}
-}
 
 @media (hover: none) {
 	body {
@@ -221,15 +193,38 @@ fieldset {
 	}
 	img {
 		width: 100%;
-		height: 
 	}
 	.profile-pic {
 		width: 75%;
 	}
 }
 
-@media only screen and (hover: none) and (orientation: landscape) {
+@media (hover: none) and (orientation: landscape) {
 	body {
 		font-size: 200%;
 	}
 }	
+
+@media (max-width: 770px) and (hover)
+{
+	nav {
+		flex-direction: column;
+	}
+
+	.main-header {
+		font-size: 4vw;
+		padding: 3% 5% 0% 5%;
+	}
+}
+
+@media (max-width: 1450px) and (hover: none)
+{
+	nav {
+		flex-direction: column;
+	}
+
+	.main-header {
+		font-size: 4vw;
+		padding: 3% 5% 0% 5%;
+	}
+}

@@ -2,65 +2,69 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Тестирование</title>
+		<title> Тестирование </title>
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<!--meta http-equiv="Refresh" content=1; url=index.html"-->
 	</head>
 	<body>
 		<header class="main-header dark-background">
-			<h1 class="site-title">ЛИЧНЫЙ САЙТ</h1>
+			<h1 class="site-title"> Личный сайт </h1>
 		</header>
 		<nav>
-			<ul>
-				<li><a href="index.html"> ГЛАВНАЯ </a></li>
-				<li><a href="about.html"> ОБО МНЕ </a></li>
-				<li><a href="interests.html"> ИНТЕРЕСЫ </a></li>
-				<li><a href="studies.html"> УЧЁБА </a></li>
-				<li><a href="photos.html"> АЛЬБОМ </a></li>
-				<li><a href="contact.html"> КОНТАКТ </a></li>
-				<li class="active"><a href="test.html"> ТЕСТ </a></li>
-				<div style=clear:both></div>
-			</ul>
+			<a href="index.html">                Главная  </a>
+			<a href="about.html" >               Обо мне  </a>
+			<a href="interests.html">         	 Интересы </a>
+			<a href="studies.html">   		     Учёба    </a>
+			<a href="photos.html">               Альбом   </a>
+			<a href="contact.html">              Контакт  </a>
+			<a href="test.html" class="active">  Тест     </a>
 		</nav>
 		<main>
-			<article class="card">
-				<header>
-					<h2 class="first-heading">Тестирование</h2>
-				</header>
-				<div class="flex-container">
-					<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
+			<article class="flex-container card">
+				<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
+					<fieldset><legend> Общая информация </legend>
+						<label for="disc-name"> Наименование дисциплины: </label>
+						<input type="text" name="disc-name" readonly value="Информатика">
+						
+						<label for="sender-name"> Ваше ФИО </label>
+						<input type="text" name="sender-name">
 
-					<fieldset><legend>Общая информация</legend>
-						Наименование дисциплины: <input type="text" name="sender-name" readonly value="Информатика"><br/>
-						Ваше ФИО: <input type="text" name="sender-name"><br/>
-						Группа: <input type="text" name="sender-name"><br/>
-						Пол: <input type="radio" name="sender-gender" value="male">мужской
-						<input type="radio" name="sender-gender" value="female">женский<br>
-						Возраст:
-						<input type=number name="sender-age" min=17 max=80 value="18"><br>
+						<label for="sender-group"> Группа </label>
+						<input type="text" name="sender-group">
+
+						<label for="sender-gender"> Пол </label>
+						<input type="radio" name="sender-gender" id="male" value="male">
+						<label for="male"> Мужской </label>
+
+						<input type="radio" name="sender-gender" id="female"value="female">
+						<label for="female"> Женский </label><br/>
+						
+						<label for="sender-age"> Возраст </label>
+						<input type=number name="sender-age" min=17 max=80 value="18">
 						</fieldset>
 					</fieldset>
-					<fieldset><legend>Вопросы</legend>
-						Microsoft Word это <select name="word-is"><br>
+					<fieldset><legend> Вопросы </legend>
+						<label for="word-is"> Microsoft Word это </label>
+						<select name="word-is">
 							<option>-</option>
-							<option value="processor">Текстовый процессор</option>
-							<option value="editor">Текстовый редактор</option>
+							<option value="processor"> Текстовый процессор </option>
+							<option value="editor"> Текстовый редактор </option>
 						</select>
-						USB расшифровывается как <select name="usb-is"><br>
+						<label for="usb-is"> USB расшифровывается как </label>
+						<select name="usb-is">
 							<option>-</option>
-							<option>Universal Series Bit</option>
-							<option>Universal Serial Bus</option>
+							<option> Universal Series Bit </option>
+							<option> Universal Serial Bus </option>
 						</select>
-						Что такое форматирование в Word<select name="formatting-is"><br>
-							<option value="none">-</option>
-							<option value="clear">Очистка</option>
-							<option value="apperance">Оформление</option>
+						<label for="formatting-is"> Что такое форматирование в Word </label>
+						<select name="formatting-is">
+							<option value="none"> - </option>
+							<option value="clear"> Очистка</option>
+							<option value="apperance"> Оформление </option>
 						</select>
-						<input type="reset">
-						<input type="submit">
-						</form>
-					</form>
-			</div>
+					</fieldset>
+					<input type="reset">
+					<input type="submit">
+				</form>
 			</article>
 		</main>
 		<footer class="main-footer dark-background">
